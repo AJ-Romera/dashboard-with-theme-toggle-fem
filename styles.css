@@ -1,0 +1,74 @@
+:root {
+	--lime-green: hsl(163, 72%, 41%);
+	--bright-red: hsl(356, 69%, 56%);
+	--facebook-color: hsl(208, 92%, 53%);
+	--twitter-color: hsl(203, 89%, 53%);
+	--instagram-gradient-color-start: hsl(37, 97%, 70%);
+	--instagram-gradient-color-end: hsl(329, 70%, 58%);
+	--youtube-color: hsl(348, 97%, 39%);
+	--toggle-gradient-color-start: hsl(210, 78%, 56%);
+	--toggle-gradient-color-end: hsl(146, 68%, 55%);
+	--toggle-color: hsl(230, 22%, 74%);
+	--bg-color-dark: hsl(230, 17%, 14%);
+	--top-bg-pattern-dark: hsl(232, 19%, 15%);
+	--card-bg-dark: hsl(228, 28%, 20%);
+	--dark-text-1: hsl(228, 34%, 66%);
+	--dark-text-2: hsl(0, 0%, 100%);
+	--bg-color-light: hsl(0, 0%, 100%);
+	--top-bg-pattern-light: hsl(225, 100%, 98%);
+	--card-bg-light: hsl(227, 47%, 96%);
+	--light-text-1: hsl(228, 12%, 44%);
+	--light-text-2: hsl(230, 17%, 14%);
+	--inter-font: 'Inter', sans-serif;
+}
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 0.875rem;
+	font-family: var(--inter-font);
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+	font-weight: 700;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* The Challenge Provide a Breakpoint at 375px for mobile
+I prefer 768 and below for mobile-tablet and above for desktop
+I can add more precise breakpoints but this is just a practice */
+/* @media screen and (min-width: 768px) {
+	
+} */
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
