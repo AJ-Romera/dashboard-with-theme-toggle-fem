@@ -34,7 +34,7 @@ html {
 }
 
 body {
-	margin: 0;
+	margin: 2.75rem 1.5rem;
 	padding: 0;
 	font-size: 0.875rem;
 	font-family: var(--inter-font);
@@ -51,6 +51,108 @@ a,
 a:visited,
 a:active {
 	text-decoration: none;
+}
+
+header {
+	margin-bottom: 3rem;
+}
+.social-media-heading {
+	display: flex;
+	flex-direction: column;
+}
+.social-media-heading h1 {
+	margin-bottom: 0.25rem;
+	color: var(--light-text-2);
+}
+.social-media-heading p {
+	margin-top: 0;
+	color: var(--light-text-1);
+	font-weight: 700;
+}
+.toggle-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.25rem;
+}
+.toggle-container span {
+	color: var(--light-text-1);
+	font-weight: 700;
+}
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 26px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		45deg,
+		var(--toggle-gradient-color-start) 10%,
+		var(--toggle-gradient-color-end) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		var(--toggle-gradient-color-start) 10%,
+		var(--toggle-gradient-color-end) 100%
+	);
+	border-radius: 34px;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.slider:before {
+	position: absolute;
+	content: '';
+	height: 20px;
+	width: 20px;
+	left: 3px;
+	bottom: 3px;
+	background-color: var(--bg-color-light);
+	border-radius: 50%;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+input:checked + .slider {
+	background: var(--toggle-color);
+	transition: 0s;
+}
+input:focus + .slider {
+	box-shadow: 0 0 1px var(--toggle-color);
+}
+input:hover + .slider {
+	cursor: pointer;
+}
+input:checked + .slider:before {
+	-webkit-transform: translateX(24px);
+	-ms-transform: translateX(24px);
+	transform: translateX(24px);
+}
+input:checked + .slider:hover {
+	cursor: pointer;
+	background: linear-gradient(
+		45deg,
+		var(--toggle-gradient-color-start) 10%,
+		var(--toggle-gradient-color-end) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		var(--toggle-gradient-color-start) 10%,
+		var(--toggle-gradient-color-end) 100%
+	);
 }
 
 .attribution {
