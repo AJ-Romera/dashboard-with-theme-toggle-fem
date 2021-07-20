@@ -356,4 +356,25 @@ I can add more precise breakpoints but this is just a practice */
 }
 
 @media screen and (min-width: 1024px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	hr {
+		display: none;
+	}
+	.toggle-container {
+		justify-content: center;
+		margin-top: 0;
+	}
+	.toggle-container > span {
+		margin-right: 1rem;
+	}
+
+	/* YOU CAN CHANGE THIS LATER
+	.top-bg-pattern {
+		height: 45%;
+	} */
 }
