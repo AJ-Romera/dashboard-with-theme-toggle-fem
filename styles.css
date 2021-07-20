@@ -356,6 +356,10 @@ I can add more precise breakpoints but this is just a practice */
 }
 
 @media screen and (min-width: 1024px) {
+	body {
+		margin: 3rem 6rem 0.5rem 6rem;
+	}
+
 	header {
 		display: flex;
 		flex-direction: row;
@@ -373,8 +377,22 @@ I can add more precise breakpoints but this is just a practice */
 		margin-right: 1rem;
 	}
 
-	/* YOU CAN CHANGE THIS LATER
-	.top-bg-pattern {
-		height: 45%;
-	} */
+	.social-cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		column-gap: 1.75rem;
+	}
+	.social-card {
+		height: 13.5rem;
+	}
+	.num-of-followers {
+		font-size: 3.25rem;
+	}
+	.followers-subtitle {
+		font-size: 0.85rem;
+	}
+	.followers-today span {
+		font-size: 0.9rem;
+	}
 }
