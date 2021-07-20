@@ -326,6 +326,7 @@ input:checked + .slider:hover {
 	justify-content: center;
 	align-items: center;
 	justify-self: right;
+	padding-top: inherit;
 }
 .percentage-change img {
 	width: 0.7rem;
@@ -346,6 +347,7 @@ input:checked + .slider:hover {
 	color: hsl(228, 45%, 44%);
 }
 
+/* Responsive Breakpoints */
 @media screen and (min-width: 768px) {
 }
 
