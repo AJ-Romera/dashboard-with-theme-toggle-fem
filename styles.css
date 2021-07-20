@@ -34,7 +34,7 @@ html {
 }
 
 body {
-	margin: 3rem 2rem;
+	margin: 3rem 2rem 0.5rem 2rem;
 	padding: 0;
 	font-size: 0.875rem;
 	font-family: var(--inter-font);
@@ -159,6 +159,7 @@ input:checked + .slider:hover {
 .social-cards {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 3rem;
 }
 .social-card {
 	display: flex;
@@ -174,6 +175,9 @@ input:checked + .slider:hover {
 	padding-top: 0.3rem;
 	border-radius: 0.5rem;
 	overflow: hidden;
+}
+.social-card:last-of-type {
+	margin-bottom: 0rem;
 }
 .social-card:hover {
 	cursor: pointer;
@@ -248,13 +252,84 @@ input:checked + .slider:hover {
 	margin-right: 0.25rem;
 }
 .followers-today span {
+	font-size: 1rem;
 	font-weight: 700;
+}
+.positive {
 	color: var(--lime-green);
+}
+.negative {
+	color: var(--bright-red);
+}
+
+.h2-subtitle {
+	font-size: 1.75rem;
+	margin-bottom: 2rem;
+	color: var(--light-text-1);
+}
+
+.overview-cards {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3rem;
+}
+.overview-card {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	height: 9.5rem;
+	margin-bottom: 1.25rem;
+	padding: 1rem 2rem;
+	background-color: var(--card-bg-light);
+	border-radius: 0.5rem;
+}
+.overview-card:last-of-type {
+	margin-bottom: 0rem;
+}
+.overview-card:hover {
+	cursor: pointer;
+	filter: brightness(0.95);
+}
+.overview-card h3 {
+	font-size: 1.075rem;
+	color: var(--light-text-1);
+	margin-bottom: 0;
+	justify-self: left;
+}
+.overview-card > img {
+	width: 1.5rem;
+	justify-self: right;
+}
+.overview-card > span {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: var(--light-text-2);
+	justify-self: left;
+}
+.percentage-change {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	justify-self: right;
+}
+.percentage-change img {
+	width: 0.7rem;
+	margin-right: 0.25rem;
+}
+.percentage-change span {
+	font-size: 1rem;
+	font-weight: 700;
 }
 
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
